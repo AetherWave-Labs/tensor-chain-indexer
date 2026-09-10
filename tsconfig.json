@@ -8,6 +8,9 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": ["types", "tests"],
     "noEmit": true,
     "outDir": "dist"
   },

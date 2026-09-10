@@ -363,6 +363,26 @@ Configure the required RPC, database, and application settings.
 
 > **Note:** The repository is currently in early development. Exact development commands, environment variables, database configuration, and runtime requirements will be finalized as the initial implementation is established.
 
+### Code Quality
+
+The repository enforces consistent formatting and static checks via ESLint, Prettier, and the
+TypeScript compiler:
+
+| Script                 | Description                                  |
+|------------------------|-----------------------------------------------|
+| `npm run lint`         | Run ESLint over the repository.               |
+| `npm run format`       | Format files with Prettier.                   |
+| `npm run format:check` | Check formatting without writing changes.     |
+| `npm run typecheck`    | Run the TypeScript compiler with no emit.     |
+| `npm test`             | Run the Vitest test suite.                    |
+
+Run these locally before opening a pull request:
+
+```bash
+npm install
+npm run lint
+npm run format:check
+=======
 ### Environment Configuration
 
 Environment variables are split by trust boundary:
