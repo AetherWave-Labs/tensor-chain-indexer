@@ -24,3 +24,9 @@ target
 node_modules/
 dist/
 coverage/
+
+
+# Environment files — never commit real secrets, only .env.example files.
+.env
+.env.local
+.env.*.local

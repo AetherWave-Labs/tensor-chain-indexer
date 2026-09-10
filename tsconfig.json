@@ -11,5 +11,9 @@
     "noEmit": true
   },
   "include": ["types", "tests"],
+    "noEmit": true,
+    "outDir": "dist"
+  },
+  "include": ["config", "tests"],
   "exclude": ["node_modules", "dist", "frontend"]
 }

@@ -382,9 +382,31 @@ Run these locally before opening a pull request:
 npm install
 npm run lint
 npm run format:check
+=======
+### Environment Configuration
+
+Environment variables are split by trust boundary:
+
+* Root `.env.example` documents backend/runtime variables (database, RPC, logging). These are
+  never exposed to a browser.
+* `frontend/.env.example` documents only variables prefixed with `VITE_`, which are the sole
+  variables bundled into the frontend build.
+
+Backend environment variables are validated at startup via `config/env.ts` (`loadBackendEnv`),
+which applies defaults and fails fast with a readable error when a required variable is missing
+or malformed. `assertNoFrontendSecretExposure` guards against a `VITE_`-prefixed variable that
+looks like a secret (matching `SECRET`, `PRIVATE_KEY`, `API_KEY`, `PASSWORD`, or `TOKEN`) ever
+being introduced.
+
+Run the config test suite and type checks with:
+
+```bash
 npm run typecheck
 npm test
 ```
+
+`.env` and other local environment files are git-ignored; only `.env.example` files should be
+committed.
 
 ## Testing
 
