@@ -8,11 +8,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
-  },
-  "include": ["types", "tests"],
     "noEmit": true,
-    "outDir": "dist"
+    "types": ["node", "vitest/globals"]
   },
   "include": ["config", "tests"],
   "exclude": ["node_modules", "dist", "frontend"]
