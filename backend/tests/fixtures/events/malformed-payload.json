@@ -1,0 +1,10 @@
+{
+  "id": "",
+  "chain": "ethereum",
+  "blockNumber": 18500002,
+  "transactionHash": "not-a-hash",
+  "logIndex": -1,
+  "eventType": "",
+  "timestamp": 1698768036,
+  "data": "should-be-an-object"
+}

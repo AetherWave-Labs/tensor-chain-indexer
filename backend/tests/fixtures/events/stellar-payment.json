@@ -1,0 +1,15 @@
+{
+  "id": "9624418ac7b7e14b6291e28d6abde75ab0ea6dab1d3c94af0d87032dc3f5533e",
+  "chain": "stellar:pubnet",
+  "blockNumber": "48291736",
+  "transactionHash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90",
+  "logIndex": 2,
+  "eventType": "payment",
+  "timestamp": 1698768024000,
+  "data": {
+    "from": "GA6HCMBLTZS5VYYBCATRBRZ3BZJMAFUDKYYF6AH6MVCMGWMRDNSWJPIH",
+    "to": "GBRPYHIL2CI3FNQ4BXLFMNDLFJUNPU2HY3ZMFSHONUCEOASW7QC7OX2H",
+    "amount": "1500.0000000",
+    "assetCode": "USDC"
+  }
+}
