@@ -1,0 +1,14 @@
+{
+  "id": "6262811208431ddc443e0499d4cbb6befe44f6137f15d7e7bfea4c3292ec61d3",
+  "chain": "evm:1",
+  "blockNumber": "18500004",
+  "transactionHash": "0x6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e",
+  "logIndex": 0,
+  "eventType": "transfer",
+  "timestamp": 1698768060,
+  "data": {
+    "from": "0x1111111111111111111111111111111111111111",
+    "to": "0x2222222222222222222222222222222222222222",
+    "value": "1"
+  }
+}
